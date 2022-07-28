@@ -1,8 +1,11 @@
 import React from 'react'
+import MusicCard from '../musicCard/MusicCard'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <MusicCard artistName='' artistThumbnail='' artistId=''/>
+      </div>
   )
 }
 
