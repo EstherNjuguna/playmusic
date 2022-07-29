@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import MusicCard from '../musicCard/MusicCard';
 
 export default function Home(){
-    const Artist="https://theaudiodb.com/api/v1/json/2/mvid.php?i=112024"
+    const Artist="https://theaudiodb.com/api/v1/json/2/mvid.php?i=111522"
     const[mvids,setMvids] = useState([])
     const mvidSearch= () => {
       fetch(Artist)

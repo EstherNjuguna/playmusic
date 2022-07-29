@@ -22,7 +22,7 @@ const Details = () => {
        // )
    // }
     useEffect(() => {
-        fetch("https://theaudiodb.com/api/v1/json/2/mvid.php?i=112024")
+        fetch("https://theaudiodb.com/api/v1/json/2/mvid.php?i=111522")
         .then(response => response.json())
         .then(mvids => {
             mvids.map((mvid) => {
