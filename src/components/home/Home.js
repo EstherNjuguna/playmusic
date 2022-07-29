@@ -16,11 +16,12 @@ mvidSearch,[]
       )
       let musicCard=mvids.map((mvid) =>(<MusicCard className="col" songName={mvid.strTrack}songUrl={mvid.strMusicVid}songThumbnail= {mvid.strTrackThumb} key={mvid.idTrack} />) )
       return (
-      <div className="card" style={{width : 25 + 'rem'}} >
-          Home
-           <div className='row'>
-              {musicCard} 
-      </div>
-    </div>
+        <div className="text-bg-secondary p-3">
+        <div className='container'>collection
+          <div className='row'>
+            {musicCard}
+          </div>
+        </div>
+        </div>
     )
-  }
+}
