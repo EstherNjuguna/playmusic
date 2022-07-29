@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-info">
     <ul class="nav justify-content-center">
   <li class="nav-item">
-    <Link class="nav-link active" aria-current="page" to="/">Home</Link>
+    <Link class="nav-link active" aria-current="page" to="/music">Home</Link>
   </li>
   <li class="nav-item">
     <Link class="nav-link" to='/music'>Music</Link>

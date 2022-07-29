@@ -7,7 +7,7 @@ function  MusicCard ({songName,songThumbnail,songUrl,songId}) {
           <div className="card-body">
           <h5 className="card-title">{songName}</h5>
          <p> <a href={songUrl} >{songName}</a></p>
-          <Link to={"/music/"+{songId}} className="btn btn-info">Artist Description</Link>
+          <Link to={"/music"+{songId}} className="btn btn-info">Artist Description</Link>
 
     </div>
   </div>

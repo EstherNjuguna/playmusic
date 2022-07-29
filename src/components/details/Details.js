@@ -1,27 +1,35 @@
 import React, { useState,useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+//import { useParams } from 'react-router-dom'
 
 const Details = () => {
-    const search_music="https://theaudiodb.com/api/v1/json/2/mvid.php?i=112024"
+    //const search_music="https://theaudiodb.com/api/v1/json/2/mvid.php?i=112024"
     const[image,setImage]=useState("")
     const[track,setTrack]=useState("")
     const[description,setDescription]=useState("")
-    let {songId}=useParams()
-    const songSearch = search_music +songId
-    const mvidSearch= () => {
-        fetch(songSearch) 
+    //let {songId}=useParams()
+   // const songSearch = search_music + songId
+    //const mvidSearch= () => {
+        //fetch(songSearch) 
+       // .then(response => response.json())
+        //.then(data => {
+          //  const mvid=data.mvids
+            //setImage(mvid.strTrackThumb)
+           // setDescription(mvid.strDescriptionEN)
+            //setTrack(mvid.strTrack)
+       // })
+        //useEffect(
+            //MvidSearch, []
+       // )
+   // }
+    useEffect(() => {
+        fetch("https://theaudiodb.com/api/v1/json/2/mvid.php?i=112024")
         .then(response => response.json())
-        .then(data => {
-            const mvid=data.mvids
-            setImage(mvid.strTrackThumb)
-            setDescription(mvid.strDescriptionEN)
-            setTrack(mvid.strTrack)
+        .then(mvids => {
+            mvids.map((mvid) => {
+                return setImage(mvid.strTrackThumb) , setDescription(mvid.strDescriptionEN), setTrack(mvid.strTrack);
+            })
         })
-    }
-        useEffect(
-  mvidSearch,[]
-        )
-
+      },[])
   return (
     <div>
         <center>
