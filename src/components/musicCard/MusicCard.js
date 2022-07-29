@@ -1,12 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-function  MusicCard ({artistName,artistThumbnail,artistId}) {
+function  MusicCard ({songName,songThumbnail,songUrl,id}) {
   return (
-    <div className="card" style="width: 18rem;">
-         <img src={artistThumbnail} className="card-img-top" alt={artistName}/>
+    <div className="card" style={{width : 25 + 'rem'}}>
+         <img src={songThumbnail} className="card-img-top" alt={songName}/>
           <div className="card-body">
-          <h5 className="card-title">Card title</h5>
-          <Link to={"/music/"+ artistId} className="btn btn-info">Artist Description</Link>
+          <h5 className="card-title">{songName}</h5>
+          <a href="http://www.youtube.com/watch?v=O1OTWCd40bc" ></a>
+          <Link to={"/music/"+ id} className="btn btn-info">Artist Description</Link>
+
     </div>
   </div>
   )
