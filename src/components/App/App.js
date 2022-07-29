@@ -3,6 +3,7 @@ import {BrowserRouter as Router,Route, Routes } from 'react-router-dom';
 import Navbar from '../navbar/Navbar';
 import Home from '../home/Home';
 import Search from '../search/Search';
+import Details from '../details/Details';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<Search />} />
+    
+       <Route  path='music/:songId' element={<Details />} />
        </Routes>
   
     </Router>
