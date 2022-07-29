@@ -14,7 +14,7 @@ export default function Home(){
       useEffect(
 mvidSearch,[]
       )
-      let musicCard=mvids.map((mvid) =>(<MusicCard className="col" songName={mvid.strTrack}songUrl={mvid.strMusicVid}songThumbnail= {mvid.strTrackThumb} key={mvid.idTrack} />) )
+      let musicCard=mvids.map((mvid) =>(<MusicCard className="col" songName={mvid.strTrack}songUrl={mvid.strMusicVid}songThumbnail= {mvid.strTrackThumb} songId={mvid.idTrack} key={mvid.idTrack} />) )
       return (
         <div className="text-bg-secondary p-3">
         <div className='container'>collection

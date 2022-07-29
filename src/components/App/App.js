@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<Search />} />
     
-       <Route  path='music/:songId' element={<Details />} />
+       <Route exactpath="/mvid/:songId"element={<Details />} />
        </Routes>
   
     </Router>

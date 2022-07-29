@@ -7,9 +7,9 @@ const Details = () => {
     const[track,setTrack]=useState("")
     const[description,setDescription]=useState("")
     let {songId}=useParams()
-    const lookmusic=search_music + songId
+    const songSearch = search_music +songId
     const mvidSearch= () => {
-        fetch(Artist)
+        fetch(songSearch) 
         .then(response => response.json())
         .then(data => {
             const mvid=data.mvids
