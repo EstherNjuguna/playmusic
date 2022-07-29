@@ -6,7 +6,7 @@ function  MusicCard ({songName,songThumbnail,songUrl,id}) {
          <img src={songThumbnail} className="card-img-top" alt={songName}/>
           <div className="card-body">
           <h5 className="card-title">{songName}</h5>
-          <a href="http://www.youtube.com/watch?v=O1OTWCd40bc" ></a>
+         <p> <a href={songUrl} >{songName}</a></p>
           <Link to={"/music/"+ id} className="btn btn-info">Artist Description</Link>
 
     </div>

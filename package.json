@@ -24,7 +24,8 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:jsx-a11y/recommended"
     ]
   },
   "browserslist": {
@@ -39,7 +40,20 @@
       "last 1 safari version"
     ]
   },
+  
+    "settings": {
+      "jsx-a11y": {
+        "components": {
+          "CityInput": "input",
+          "CustomButton": "button",
+          "MyButton": "button",
+          "RoundButton": "button"
+        }
+      }
+    }
+  ,
   "devDependencies": {
+    "eslint": "^8.20.0",
     "gh-pages": "^4.0.0"
   }
 }
