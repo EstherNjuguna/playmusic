@@ -1,44 +1,39 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-
-const search_music = "https://theaudiodb.com/api/v1/json/2/mvid.php?i=111522"
-
+import React,{useEffect,useState} from 'react'
+import Post from '../reviewForm/ReviewForm'
+import { useParams } from 'react-router-dom'
 export default function Details(){
+  const[image, setImage] = useState("")
+  const[track, setTrack] = useState("")
+  const[description, setDescription] = useState("")
+  const[video, setVideo] = useState("")
+  const[id, setId] = useState("")
+  let {songId}=useParams()
 
-    const [image, setImage] = useState("")
-    const [track, setTrack] = useState("")
-    const [description, setDescription] = useState("")
-
-    let {songId} = useParams()
-
-    const actualSearch = search_music + songId
-
-    const mvidSearch = () => {
-        fetch(actualSearch)
-            .then((response) => response.json())
-            .then((data) => {
-              console.log(data)
-                const mvid = data.mvids
-
-                setImage(mvid.strTrackThumb)
-                setDescription(mvid.strDescriptionEN)
-                setTrack(mvid.strTrack)
-             })
-    }
-
-    useEffect(
-       mvidSearch, []
-    )
+  useEffect(() => {
+      fetch("https://theaudiodb.com/api/v1/json/2/mvid.php?i=111522")
+      .then(response => response.json())
+      .then((songs) => {
+          songs.map((song) => {
+              return setImage(song.strTrackThumb), setVideo(song.strMusicVid),  setTrack(song.strTrack), 
+              setDescription(song.strDescriptionEN);
+          })
+      })
+    }, [])
 
     return (
-      <div>
+      <div className="text-bg-info p-3 " >
+      <div className='container'>
           <center>
-              <img src={image} alt={track}style={{height:300 +'px',width:300 +'px'}} />
-          <h3>{track}</h3>
-         
+          <div className='card' style={{width : 25 + 'rem'}} >
+          <img src={image} style={{height: 300 + 'px', width: 400 + 'px', }} alt={track}
+           />
+          <h5>{track}</h5>
+         <p>{video}</p>
           <p>{description}</p>
+          </div>
           </center>
-          
+          <Post />
+      </div>
       </div>
     )
   }

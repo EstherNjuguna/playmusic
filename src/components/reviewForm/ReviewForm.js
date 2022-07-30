@@ -28,12 +28,12 @@ export default function Post(){
     return(
         <div>
             <center>
-            <h3>Share your experience about the game</h3>
+            <h3>Write your Lyrics here</h3>
         <form onSubmit={handleSubmit}>
-        <input type="text" placeholder='Write your review here'  onChange={handleReview} value={review}/>
+        <input type="text"   onChange={handleReview} placeholder="memories"/>
         <button type="submit">Post</button>
       </form>
-      <h3>Game reviews</h3>
+      <h3>Song lyrics</h3>
       <ul>
       <li>
       {listOfSubmissions}
