@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import Post from '../reviewForm/ReviewForm'
 import { useParams } from 'react-router-dom'
+
 export default function Details(){
   const searchSongs="https://theaudiodb.com/api/v1/json/2/mvid.php?i=111522"
   const[image, setImage] = useState("")
@@ -9,21 +10,22 @@ export default function Details(){
   const[video, setVideo] = useState("")
   const[id, setId] = useState("")
   let {songId}=useParams()
-const ReviewData=searchSongs + songId
-const mvidSearch= () => {
-  fetch(ReviewData)
-  .then(response => response.json())
-  .then(data => {
-    const mvid= data.mvids[0]
-    setImage(mvid.strTrackThumb)
-     setVideo(mvid.strMusicVid)
-      setTrack(mvid.strTrack) 
-    setDescription(mvid.strDescriptionEN);
-})
-}
-  useEffect( 
-      mvidSearch,[]
-  )
+
+  const ReviewData=searchSongs 
+  const mvidSearch= () => {
+    fetch(ReviewData)
+    .then(response => response.json())
+    .then(data => {
+      const mvid= data.mvids[0]
+      setImage(mvid.strTrackThumb)
+       setVideo(mvid.strMusicVid)
+        setTrack(mvid.strTrack) 
+      setDescription(mvid.strDescriptionEN);
+  })
+  }
+    useEffect( 
+        mvidSearch,[]
+    )
     return (
       <div className="text-bg-info p-3 " >
       <div className='container'>
