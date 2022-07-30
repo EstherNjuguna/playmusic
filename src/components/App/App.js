@@ -17,7 +17,7 @@ function App() {
         <Route path="/music" element={<Home />} />
         <Route path="/search" element={<Search />} />
         <Route path="/musiccard" element={<MusicCard />} />
-        <Route exact path="mvid/:musicId" element={<Details />}></Route>
+        <Route exact path="/mvid/:songId"element={<Details />}></Route>
        </Routes>
   
     </Router>
