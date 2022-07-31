@@ -1,5 +1,5 @@
 import React from "react";
-
+import Footer from "./Footer";
 export default function Home() {
   return (
     <div className="text-bg-secondary p-4">
@@ -26,6 +26,8 @@ export default function Home() {
         </div>
       
     </form>
+    <Footer />
     </div>
+  
   );
 }

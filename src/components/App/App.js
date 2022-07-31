@@ -6,6 +6,7 @@ import Search from '../search/Search';
 import MusicCard from '../musicCard/MusicCard';
 import Details from '../details/Details';
 import Music from '../music/Music';
+import About from '../home/About';
 
 function App() {
 
@@ -21,6 +22,8 @@ function App() {
         <Route path="/musiccard" element={<MusicCard />} />
         <Route exact path="/mvid/:songId"element={<Details />}></Route>
         <Route exact path="/search" element={<Search /> }></Route>
+        <Route exact path="/detail/:songId" element={<Details />} />
+        <Route path="/about" element={<About />} />
        </Routes>
   
     </Router>

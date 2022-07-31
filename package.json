@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
@@ -40,18 +41,16 @@
       "last 1 safari version"
     ]
   },
-  
-    "settings": {
-      "jsx-a11y": {
-        "components": {
-          "CityInput": "input",
-          "CustomButton": "button",
-          "MyButton": "button",
-          "RoundButton": "button"
-        }
+  "settings": {
+    "jsx-a11y": {
+      "components": {
+        "CityInput": "input",
+        "CustomButton": "button",
+        "MyButton": "button",
+        "RoundButton": "button"
       }
     }
-  ,
+  },
   "devDependencies": {
     "eslint": "^8.20.0",
     "gh-pages": "^4.0.0"

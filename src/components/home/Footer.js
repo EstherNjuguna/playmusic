@@ -1,25 +1,25 @@
 
 
 import React from "react";
-import styled from "styled-components";
+
 import { BsLinkedin, BsFacebook } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 export default function Footer() {
   return (
-    <FooterContainer>
+    <div>
       
       <ul className="links">
         <li>
-          <a href="#hero">Home</a>
+          <a href="/home">Home</a>
         </li>
         <li>
-          <a href="#services">About</a>
+          <a href="/music">Music</a>
         </li>
         <li>
-          <a href="#recommend">Places</a>
+          <a href="/About">About</a>
         </li>
         <li>
-          <a href="#testimonials">Testimonials</a>
+          <a href="/search">Search</a>
         </li>
       </ul>
       <ul className="social__links">
@@ -33,6 +33,6 @@ export default function Footer() {
           <BsLinkedin />
         </li>
       </ul>
-    </FooterContainer>
+    </div>
   );
 }

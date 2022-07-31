@@ -11,7 +11,7 @@ export default function Details(){
   const[id, setId] = useState("")
   let {songId}=useParams()
 
-  const ReviewData=searchSongs +songId
+  const ReviewData=searchSongs 
   const mvidSearch= () => {
     fetch(ReviewData)
     .then(response => response.json())
