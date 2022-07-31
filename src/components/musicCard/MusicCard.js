@@ -14,7 +14,7 @@ function  MusicCard ({songName,songThumbnail,songUrl,idTrack}) {
           <button>
           <FaHeart style={{color: 'red', fontSize: '20px'}}/>
           </button>
-          <button>
+          <button  >
             <AiFillDelete style={{color: 'black', fontSize: '20px'}}/>
           </button>
 

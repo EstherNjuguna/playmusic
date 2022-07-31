@@ -12,7 +12,7 @@ function About() {
     <h1>PLAY MAROON</h1>
     <p><b>PLAY MUSIC</b> We get a chance to enjoy upfront and vast info about Maroon-5.
     Search from their wide collection of music add a favorite or like button.Also get a chance to delete music and post your lyrics</p>
-    
+    <p>Maroon 5 are one of the world's most well-known music acts. Having formed in High School, the group have gone from strength to strength. Lead singer Adam Levine and his bandmates have released seven studio albums, had nine tours and had a whopping 13 Top 20 songs in the UK.</p>
     </section>
     </div>
     <section className="footer">

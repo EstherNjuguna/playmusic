@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Col } from "reactstrap";
 
 const MEMBERS = [
 
@@ -56,12 +56,11 @@ const OurMembers = () => {
   return (
     <>
       {MEMBERS.map((item, index) => (
-        <div  lg="3" md="3" sm="4" xs="6" key={index} className="col mb-4">
+        <Col lg="3" md="3" sm="4" xs="6" key={index} className="mb-4">
           <div className="single__member">
             <div className="single__member-img">
-              <img src={item.imgUrl} alt={item.name}  />
+              <img src={item.imgUrl} alt={item.name} className="w-100"  />
 
-              
             </div>
 
             <h6 className="text-center mb-0 mt-3">{item.name}</h6>
@@ -69,7 +68,7 @@ const OurMembers = () => {
               {item.Role}
             </p>
           </div>
-        </div>
+        </Col>
       ))}
     </>
   );
