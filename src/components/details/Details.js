@@ -37,6 +37,7 @@ export default function Details(){
           <h5>{track}</h5>
          <p><a href={video} alt={track}>{track}</a></p>
           <p >{description}</p>
+          
           </div>
           </center>
           

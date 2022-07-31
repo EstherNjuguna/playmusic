@@ -24,23 +24,22 @@ export default function Footer() {
         //  <Link className="nav-link" to="/search">Search</Link>
         //</li>
       //</ul>
-      <nav class="navbar navbar-expand-lg bg-info">
-          
-      <ul className="social__links">
-        <li className="nav-item">
+      <div className="row">
+    <div className="col-8 d-flex justify-content- bg-info">
+    
+        
           <BsFacebook /> 
           <a className="nav-link"href="#Facebook">Facebook</a>
-        </li>
-        <li className="nav-item">
+    
+        
           <AiFillInstagram /> 
           <a className="nav-link"href="#Instagram">Instagram</a>
-        </li>
-        <li className="nav-item">
+        
+        
           <BsLinkedin />
           <a className="nav-link"href="#Linkedin">Linkedin</a>
-        </li>
-      </ul>
-  
-    </nav>
+      
+  </div>
+      </div> 
   );
 }

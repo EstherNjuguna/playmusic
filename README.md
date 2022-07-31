@@ -1,7 +1,7 @@
 # PlayMusic
 ## About
 
-This project is a webpage where one can search their favorite music , play the music, delete music from their playlist and able to add new music
+This project is a webpage where one can search their favorite music , play the music and add lyrics to the music
 ## Project Status
 project still under development
 
