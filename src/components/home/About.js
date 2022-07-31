@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from './Footer';
 function About() {
   return (
-    <>
+    
     <div className="text-bg-secondary p-4">
     <div>
        
@@ -18,7 +18,7 @@ function About() {
     </section>
     <Footer />
     </div>
-</>
+
   )
 }
 
