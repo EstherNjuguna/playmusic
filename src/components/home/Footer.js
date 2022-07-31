@@ -29,15 +29,15 @@ export default function Footer() {
       <div className="row">
     <div className=" d-flex justify-content- bg-info">
   
-          <BsFacebook /> 
+         <BsFacebook /> 
         
           <AiFillInstagram />
         
           <BsLinkedin />
           
-
           </div> 
           </div>
+          
       <div className="col" lg="3" md="4" >
             <div className>
               <h5 className="footer__link-title mb-4">Head Office</h5>

@@ -22,12 +22,13 @@ function About() {
       
           <div className="row">
             <div lg="12" className=" col mb-5 text-center">
-              <h6 className="section__subtitle">Experts</h6>
-              <h2 className="section__title">Our Members</h2>
+            
+              <h2 className="section__title">BAND MEMBERS</h2>
             </div>
+            <div>
             < OurMembers />
           </div>
-        
+        </div>
       
     </section>
     <Footer />

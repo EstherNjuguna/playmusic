@@ -59,7 +59,7 @@ const OurMembers = () => {
         <div  lg="3" md="3" sm="4" xs="6" key={index} className="col mb-4">
           <div className="single__member">
             <div className="single__member-img">
-              <img src={item.imgUrl} alt="" className="w-50" />
+              <img src={item.imgUrl} alt={item.name}  />
 
               
             </div>
