@@ -24,10 +24,11 @@ export default function Footer() {
         //  <Link className="nav-link" to="/search">Search</Link>
         //</li>
       //</ul>
+      <footer className="container bg-info">
+      
       <div className="row">
-    <div className="col-8 d-flex justify-content- bg-info">
-    
-        
+    <div className=" d-flex justify-content- bg-info">
+  
           <BsFacebook /> 
           <a className="nav-link"href="#Facebook">Facebook</a>
     
@@ -38,8 +39,20 @@ export default function Footer() {
         
           <BsLinkedin />
           <a className="nav-link"href="#Linkedin">Linkedin</a>
+
+          </div> 
+          </div>
+      <div className="col" lg="3" md="4" sm="6">
+            <div className="mb-4">
+              <h5 className="footer__link-title mb-4">Head Office</h5>
+              <p className="office__info">81-00219 Kenya</p>
+              <p className="office__info">Phone: +25478564636</p>
+
+              <p className="office__info">Email: playmusic@gmail.com</p>
+            </div>
+          </div>
+  
       
-  </div>
-      </div> 
+      </footer>
   );
 }
