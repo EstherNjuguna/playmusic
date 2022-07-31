@@ -22,6 +22,6 @@ mvidSearch,[]
             {musicCard}
           </div>
         </div>
-       // </div>
+        </div>
     )
 }
