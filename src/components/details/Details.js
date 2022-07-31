@@ -29,15 +29,14 @@ export default function Details(){
     )
     return (
      
-      <div className='container'>
+      <div className='container bg-secondary'>
           <center>
-        
           <div className='card' style={{width : 25 + 'rem'}} >
           <img src={image} style={{height: 300 + 'px', width: 400 + 'px', }} alt={track}
            />
           <h5>{track}</h5>
          <p><a href={video} alt={track}>{track}</a></p>
-          <p>{description}</p>
+          <p >{description}</p>
           </div>
           </center>
           
