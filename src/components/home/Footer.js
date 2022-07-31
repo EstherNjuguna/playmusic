@@ -30,20 +30,16 @@ export default function Footer() {
     <div className=" d-flex justify-content- bg-info">
   
           <BsFacebook /> 
-          <a className="nav-link"href="#Facebook">Facebook</a>
-    
         
-          <AiFillInstagram /> 
-          <a className="nav-link"href="#Instagram">Instagram</a>
-        
+          <AiFillInstagram />
         
           <BsLinkedin />
-          <a className="nav-link"href="#Linkedin">Linkedin</a>
+          
 
           </div> 
           </div>
-      <div className="col" lg="3" md="4" sm="6">
-            <div className="mb-4">
+      <div className="col" lg="3" md="4" >
+            <div className>
               <h5 className="footer__link-title mb-4">Head Office</h5>
               <p className="office__info">81-00219 Kenya</p>
               <p className="office__info">Phone: +25478564636</p>
