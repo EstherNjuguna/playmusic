@@ -28,9 +28,10 @@ export default function Details(){
         mvidSearch,[]
     )
     return (
-
+     
       <div className='container'>
           <center>
+        
           <div className='card' style={{width : 25 + 'rem'}} >
           <img src={image} style={{height: 300 + 'px', width: 400 + 'px', }} alt={track}
            />
@@ -39,6 +40,7 @@ export default function Details(){
           <p>{description}</p>
           </div>
           </center>
+          
           <Post />
       </div>
       

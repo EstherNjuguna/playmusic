@@ -1,27 +1,31 @@
-import React, { useEffect, useState } from 'react';
-import MusicCard from '../musicCard/MusicCard';
-const Artist="https://theaudiodb.com/api/v1/json/2/mvid.php?i=111522"
-export default function Home(){
-    const[mvids,setMvids] = useState([])
- const mvidSearch= () => {
-      fetch(Artist)
-      .then(response => response.json())
-      .then(data => {
-          setMvids(data.mvids)  
-      })
-  }
-      useEffect(
-mvidSearch,[]
-      )
-      let musicCard=mvids.map((mvid) =>(<MusicCard className="col" songName={mvid.strTrack}songUrl={mvid.strMusicVid}songThumbnail= {mvid.strTrackThumb} songId={mvid.idTrack} key={mvid.idTrack} />) )
-      return (
-        //<div className="text-bg-info p-3">
-        <div className='container'>
-          music
-          <div className='row'>
-            {musicCard}
-          </div>
+import React from "react";
+
+export default function Home() {
+  return (
+    <div className="text-bg-secondary p-4">
+    <form id="home">
+      <div className="background">
+        <img src="https://c.ndtvimg.com/2021-11/6kudlfig_budgetwirelessheadphonesamazon_625x300_04_November_21.jpg?downsize=950:*" alt="" />
+      </div>
+      <div className="content">
+        <div className="title">
+          <h1>ENJOY MAROON-5</h1>
+          <p>
+        Lets enjoy some cool pop music from our all time Band
+          </p>
         </div>
-       // </div>
-    )
+        <div className="search">
+          <div className="container">
+           
+            <input type="text" placeholder="Memories" />
+          </div>
+         
+          </div>
+         
+          <button>Explore Now</button>
+        </div>
+      
+    </form>
+    </div>
+  );
 }
