@@ -10,7 +10,8 @@ function About() {
     <section className="about" id="about">
 
     <h1>PLAY MAROON</h1>
-    <p><b>PLAY MUSIC</b>  Is an app that enables users to play their favorite songs from Maroon 5. It will also enable one to type in their lyrics, mark a song as their favorite songs also.</p>
+    <p><b>PLAY MUSIC</b> We get a chance to enjoy upfront and vast info about Maroon-5.
+    Search from their wide collection of music add a favorite or like button.Also get a chance to delete music and post your lyrics</p>
     
     </section>
     </div>
