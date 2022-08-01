@@ -26,8 +26,8 @@ export default function Footer() {
       //</ul>
       <footer className="container bg-info">
       
-      <div className="row">
-    <div className=" d-flex justify-content bg-info">
+      <div className="row rounded-5" >
+    <div className=" d-flex justify-content bg-info ">
   
          <BsFacebook /> 
         
@@ -38,8 +38,8 @@ export default function Footer() {
           </div> 
           </div>
           
-      <div className="col" lg="3" md="4" >
-            <div className>
+      <div className="col" lg="3" md="4" mb="0" >
+            <div className="text-center">
               <h5 className="footer__link-title mb-4">Head Office</h5>
               <p className="office__info">PLAY MUSIC</p>
               <p className="office__info">81-00219 Kenya</p>

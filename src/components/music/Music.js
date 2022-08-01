@@ -8,13 +8,16 @@ export default function Music(){
       fetch(Artist)
       .then(response => response.json())
       .then(data => {
-          setMvids(data.mvids)  
+          setMvids(data.mvids)
       })
   }
       useEffect(
 mvidSearch,[]
       )
-      let musicCard=mvids.map((mvid) =>(<MusicCard className="col" songName={mvid.strTrack}songUrl={mvid.strMusicVid}songThumbnail= {mvid.strTrackThumb} songId={mvid.idTrack} key={mvid.idTrack} />) )
+      const musicCard=mvids.map((mvid) =>(<MusicCard className="col" songName={mvid.strTrack}songUrl={mvid.strMusicVid}songThumbnail= {mvid.strTrackThumb} songId={mvid.idTrack} key={mvid.idTrack} />) )
+     
+
+
       return (
      
         <div className='container bg-secondary'>
