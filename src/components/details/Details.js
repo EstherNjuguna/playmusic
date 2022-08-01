@@ -8,7 +8,7 @@ export default function Details(){
   const[track, setTrack] = useState("")
   const[description, setDescription] = useState("")
   const[video, setVideo] = useState("")
-  const[id, setId] = useState("")
+   const[id, setId] = useState("")
   let {songId}=useParams()
 
   const ReviewData=searchSongs 
