@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from './Footer';
 import OurMembers from './Info';
 function About() {
+  
   return (
     
     <div className="text-bg-secondary p-4">

@@ -6,11 +6,15 @@ export default function Home() {
   return (
     <div className="text-bg-secondary p-4">
     <form id="home">
-      <div className="background">
+      <div className="background text-center img-fluid">
         <img src="https://c.ndtvimg.com/2021-11/6kudlfig_budgetwirelessheadphonesamazon_625x300_04_November_21.jpg?downsize=950:*" alt="" />
       </div>
+      <div className="container text-center">
+
+
+      </div>
       <section className="content">
-        <div className="title">
+        <div className="title text-center">
           <h1>ENJOY MAROON-5</h1>
           <p>
         
