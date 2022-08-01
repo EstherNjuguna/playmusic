@@ -11,7 +11,7 @@ const MEMBERS = [
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
-    imgUrl: "https://images.hola.com/us/images/0270-13dcf166a152-2ca06f37cc73-1000/horizontal-1200/baby2baby-10-year-gala-presented-by-paul-mitchell-arrivals.jpg",
+    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/AdamLevine2011.jpg/800px-AdamLevine2011.jpg",
   },
 
   {
@@ -38,7 +38,7 @@ const MEMBERS = [
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
-    imgUrl: "https://images.app.goo.gl/Eb3xe8jwZHefoPuo8https://static.wikia.nocookie.net/maroon5/images/9/91/Mickey_madden.jpg/revision/latest/scale-to-width-down/250?cb=20150404012342",
+    imgUrl: "http://wrightsonwood.com/wp-content/uploads/2012/10/michael-madden.jpg",
   },
   {
     name: "Jesse Carmichael",
@@ -56,10 +56,10 @@ const OurMembers = () => {
   return (
     <>
       {MEMBERS.map((item, index) => (
-        <Col lg="3" md="3" sm="4" xs="6" key={index} className="mb-4">
+        <Col  key={index} className="mb-4">
           <div className="single__member">
             <div className="single__member-img">
-              <img src={item.imgUrl} alt={item.name} className="w-100"  />
+              <img src={item.imgUrl} alt={item.name} style={{height: '200px',width:'200px'}}  />
 
             </div>
 

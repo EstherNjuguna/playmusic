@@ -19,7 +19,7 @@ mvidSearch,[]
      
         <div className='container bg-secondary'>
           music
-          <div className='row'>
+          <div class="row justify-content-md-center">  
             {musicCard}
           </div>
           <ScrollToTop />

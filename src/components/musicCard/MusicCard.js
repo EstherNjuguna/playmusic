@@ -4,6 +4,10 @@ import { FaHeart } from 'react-icons/fa';
 import {AiFillDelete} from "react-icons/ai";
 
 function  MusicCard ({songName,songThumbnail,songUrl,idTrack}) {
+ 
+   
+
+   
   return (
     <div className="card" style={{width : 25 + 'rem'}}>
          <img src={songThumbnail} className="card-img-top" alt={songName}/>
@@ -14,9 +18,10 @@ function  MusicCard ({songName,songThumbnail,songUrl,idTrack}) {
           <button>
           <FaHeart style={{color: 'red', fontSize: '20px'}}/>
           </button>
-          <button  >
-            <AiFillDelete style={{color: 'black', fontSize: '20px'}}/>
+          <button >
+<AiFillDelete style={{color: 'black', fontSize: '20px'}}/>
           </button>
+          
 
     </div>
   </div>

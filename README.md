@@ -11,6 +11,8 @@ The author of this project is Esther Njuguna, a software developer student at Mo
 
 ### 
 we use a public API that allows one to get music
+## Live Link
+
 
 ## installation and Setup
 clone this repo . You need node and npm installed

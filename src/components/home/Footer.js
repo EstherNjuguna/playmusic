@@ -27,7 +27,7 @@ export default function Footer() {
       <footer className="container bg-info">
       
       <div className="row">
-    <div className=" d-flex justify-content- bg-info">
+    <div className=" d-flex justify-content bg-info">
   
          <BsFacebook /> 
         
@@ -41,6 +41,7 @@ export default function Footer() {
       <div className="col" lg="3" md="4" >
             <div className>
               <h5 className="footer__link-title mb-4">Head Office</h5>
+              <p className="office__info">PLAY MUSIC</p>
               <p className="office__info">81-00219 Kenya</p>
               <p className="office__info">Phone: +25478564636</p>
 

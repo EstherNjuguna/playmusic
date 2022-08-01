@@ -29,17 +29,19 @@ export default function Details(){
     )
     return (
      
-      <div className='container bg-secondary'>
-          <center>
+      <div className='container bg-secondary col-3'>
+          
           <div className='card' style={{width : 25 + 'rem'}} >
-          <img src={image} style={{height: 300 + 'px', width: 400 + 'px', }} alt={track}
+      
+          <img src={image} style={{height: 200 + 'px', width: 300 + 'px', }} alt={track}
            />
           <h5>{track}</h5>
          <p><a href={video} alt={track}>{track}</a></p>
           <p >{description}</p>
           
           </div>
-          </center>
+    
+        
           
           <Post />
       </div>

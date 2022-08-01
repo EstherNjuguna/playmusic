@@ -7,7 +7,7 @@ export default function Home() {
     <div className="text-bg-secondary p-4">
     <form id="home">
       <div className="background">
-        <img src="https://c.ndtvimg.com/2021-11/6kudlfig_budgetwirelessheadphonesamazon_625x300_04_November_21.jpg?downsize=950:*"style={{height: 45 + 'rem', width: 100 + 'rem', }} alt="" />
+        <img src="https://c.ndtvimg.com/2021-11/6kudlfig_budgetwirelessheadphonesamazon_625x300_04_November_21.jpg?downsize=950:*" alt="" />
       </div>
       <section className="content">
         <div className="title">
@@ -18,7 +18,11 @@ export default function Home() {
           </p>
         </div>
        </section>
-      
+      <aside>
+      <div className="container">
+
+      </div>
+      </aside>
     </form>
     <Footer />
     <ScrollToTop />

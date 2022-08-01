@@ -26,7 +26,7 @@ function About() {
             
               <h2 className="section__title">BAND MEMBERS</h2>
             </div>
-            <div>
+             <div className="row justify-content-md-center">
             < OurMembers />
           </div>
         </div>
