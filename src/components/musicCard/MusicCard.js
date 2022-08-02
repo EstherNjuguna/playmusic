@@ -14,6 +14,7 @@ function  MusicCard ({songName,songThumbnail,songUrl,idTrack}) {
     setWatched((watched)=>!watched)
     return alert("You want to rewatch")
    }
+   const color = favorite ? "red" : "white";
   return (
     <div className="card" style={{width : 25 + 'rem'}}>
          <img src={songThumbnail} className="card-img-top" alt={songName}/>
@@ -21,7 +22,7 @@ function  MusicCard ({songName,songThumbnail,songUrl,idTrack}) {
           <h5 className="card-title">{songName}</h5>
          <p> <a href={songUrl} >{songName}</a></p>
           <Link to={"/mvid/"+idTrack }className="btn btn-info">Song Description</Link>
-          <button onClick={handleFavorites}>{favorite?"unfavorite":"favourite"}
+          <button style={{ background: color }} onClick={handleFavorites}> {favorite ? "favorite" : "unfavorite"}
           {<FaHeart style={{color: 'red', fontSize: '20px'}}/> }
           </button>
           
