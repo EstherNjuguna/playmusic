@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="text-bg-secondary p-4">
       <aside>
-        <div className="col">
+        <div className="col" >
           <img src="https://www.chargerbulletin.com/wp-content/uploads/2014/09/Maroon-5-band-facebook-300x276.jpg"  alt="Maroon 5" />
         </div>
       </aside>

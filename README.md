@@ -3,7 +3,7 @@
 
 This project is a webpage where one can search their favorite music , play the music and add lyrics to the music
 ## Project Status
-project still under development
+project is complete but still has more room for improvement
 
 ## Author
 
@@ -12,7 +12,7 @@ The author of this project is Esther Njuguna, a software developer student at Mo
 ### 
 we use a public API that allows one to get music
 ## Demo
-chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/ad256c60-c97b-480a-yb5f-93f370f14630
+https://github.com/EstherNjuguna/playmusic/blob/main/src/components/Images/React%20App.gif
 
 ## installation and Setup
 clone this repo . You need node and npm installed
